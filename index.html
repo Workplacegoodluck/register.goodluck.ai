@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Account</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .registration-box {
+            background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+        .registration-box h2 {
+            margin-bottom: 5px;
+        }
+        .registration-box input {
+            width: 80%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .registration-box button {
+            background-color: #676a6da5;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 30px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .registration-box button:hover {
+            background-color: #0056b3;
+        }
+        .registration-box p {
+            margin-top: 1px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the "Continue with Google" option */
+        }
+        .registration-box a {
+            text-decoration: underline;
+            cursor: pointer;
+            margin-left: 5px; /* Add some spacing to the left of the link */
+        }
+        .google-logo {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px; /* Add some spacing between the logo and text */
+        }
+        .company-logo {
+            width: 50px;
+            height: 50px;
+            margin: 10px auto; /* Center the company logo and add spacing top and bottom */
+            display: block; /* Make the company logo a block element */
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-box">
+        <img class="company-logo" src="logo.png.png" alt="Company Logo">
+        <h2>Goodluck AI</h2>
+        <h3>Create Your Account</h3>
+        <form id="registration-form" onsubmit="registerUser(); return false;">
+            <input type="email" placeholder="Enter Email Address" required><br>
+            <button type="submit">Continue</button>
+        </form>
+        <p>
+            <p>or</p>
+            <img class="google-logo" src="Google__G__Logo.svg.webp" alt="Google Logo">
+           
+            <span>Continue with Google</span>
+        </p>
+    </div>
+
+    <script>
+        function registerUser() {
+            const email = document.querySelector('#registration-form input[type="email"]').value;
+
+            // You can send the email to your server for further processing.
+            // Example: Send a POST request to your server to create a new user account.
+            // You would typically use an AJAX library or fetch API for this purpose.
+
+            alert("Registration email sent to: " + email); // Replace with actual registration logic.
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
